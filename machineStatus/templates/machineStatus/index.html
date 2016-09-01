@@ -47,12 +47,14 @@
             <tr> 
                 <th> Name </th> 
                 <th> State </th> 
+                <th> Status </th> 
             </tr>
             {% if machine_list %} 
             {% for machine in machine_list %} 
             <tr> 
                 <td> {{ machine.machine_name }} </td> 
                 <td class="state"> {{ machine.machine_state }} </td> 
+                <td class="status"> {{ machine.machine_status }} </td>
             </tr> 
             {% endfor %} 
             {% else %}
